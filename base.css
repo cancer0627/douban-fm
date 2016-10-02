@@ -1,0 +1,105 @@
+/*初始化*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+
+/*整体布局*/
+
+body {
+    position: relative;
+}
+
+#f_fixed {
+    width: 100%;
+    position: fixed;
+}
+
+#fixed {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+/*logo，登录*/
+
+#sign {
+    width: 100%;
+    height: 145px;
+    background-color: #444;
+}
+
+#logo {
+    display: inline-block;
+    margin-top: 55px;
+    margin-left: 45px;
+}
+
+#sign_div {
+    display: inline-block;
+    float: right;
+}
+
+
+/*播放器，分享*/
+
+#p_player {
+    width: 510px;
+    margin-top: -50px;
+    margin-left: 390px;
+    background-color: #000;
+}
+
+#player {
+    height: 245px;
+    background-color: #ccc;
+}
+
+#share {
+    height: 150px;
+    background-color: #ccc;
+    margin-top: 50px;
+}
+
+
+/*背景div*/
+
+#bk_bkground {
+    position: fixed;
+    width: 100%;
+    height: 250px;
+    background-color: #963;
+    top: 190px;
+    z-index: -1;
+}
+
+
+/*底部*/
+
+#b_bottom {
+    height: 200px;
+    width: 900px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+#ad_last {
+    display: inline-block;
+    margin-left: -25px;
+}
+
+
+/**/
+
+#main_body {
+    width: 900px;
+    background-color: blue;
+    margin: 0 auto;
+    padding-top: 200px;
+}
