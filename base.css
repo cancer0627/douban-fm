@@ -7,6 +7,8 @@
     text-decoration: none;
     color: #000;
     font-size: 13px;
+    font-weight: initial;
+    list-style: none;
 }
 
 
@@ -19,20 +21,23 @@ body {
 #f_fixed {
     width: 100%;
     position: fixed;
+    z-index: -50;
 }
 
 #fixed {
     width: 900px;
     margin: 0 auto;
+    position: relative;
 }
 
 
 /*logo，登录*/
 
 #sign {
-    width: 100%;
+    width: 900px;
     height: 145px;
-    background-color: #444;
+    position: fixed;
+    z-index: 50;
 }
 
 #logo {
@@ -51,9 +56,10 @@ body {
 
 #p_player {
     width: 510px;
-    margin-top: -50px;
+    margin-top: 95px;
     margin-left: 390px;
-    background-color: #000;
+    position: fixed;
+    z-index: 100;
 }
 
 #player {
@@ -76,30 +82,54 @@ body {
     height: 250px;
     background-color: #963;
     top: 190px;
-    z-index: -1;
+    z-index: -100;
+}
+
+
+/*主要内容*/
+
+#m_main_body {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#main_body {
+    display: inline-block;
+    float: left;
+    margin-top: 170px;
 }
 
 
 /*底部*/
 
 #b_bottom {
-    height: 200px;
     width: 900px;
-    margin: 0 auto;
-    background-color: red;
+    float: left;
 }
 
 #ad_last {
     display: inline-block;
+    float: left;
     margin-left: -25px;
 }
 
+#bottom {
+    text-align: center;
+}
 
-/**/
 
-#main_body {
-    width: 900px;
-    background-color: blue;
-    margin: 0 auto;
-    padding-top: 200px;
+/*右拉列表*/
+
+#select_body {
+    width: 675px;
+    height: 100%;
+    left: -650px;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 0 30px #777;
+    z-index: 500;
+}
+
+#select_body:hover {
+    transform: translateX(650px);
 }
