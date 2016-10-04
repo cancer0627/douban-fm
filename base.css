@@ -9,6 +9,7 @@
     font-size: 13px;
     font-weight: initial;
     list-style: none;
+    outline: none;
 }
 
 
@@ -21,7 +22,6 @@ body {
 #f_fixed {
     width: 100%;
     position: fixed;
-    z-index: -50;
 }
 
 #fixed {
@@ -35,15 +35,16 @@ body {
 
 #sign {
     width: 900px;
-    height: 145px;
     position: fixed;
-    z-index: 50;
+    z-index: 100;
 }
 
 #logo {
     display: inline-block;
     margin-top: 55px;
     margin-left: 45px;
+    position: fixed;
+    z-index: 75;
 }
 
 #sign_div {
@@ -59,7 +60,7 @@ body {
     margin-top: 95px;
     margin-left: 390px;
     position: fixed;
-    z-index: 100;
+    z-index: 50;
 }
 
 #player {

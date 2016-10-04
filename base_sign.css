@@ -1,0 +1,42 @@
+#sign_div > div {
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+}
+
+#user_name > div:first-child {
+    display: inline-block;
+    height: 2px;
+    border-color: #666 transparent transparent;
+    border-style: solid solid solid;
+    border-width: 4px 4px 0;
+}
+
+#user_name + div {
+    padding: 0 10px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#user_name > .user_name_list {
+    position: absolute;
+    display: none;
+    padding: 15px 0;
+    width: 100px;
+    border: 1px solid #eee;
+    right: 0;
+    background-color: #fff;
+}
+
+#user_name > .user_name_list > li > a {
+    padding: 5px 15px;
+    display: block;
+}
+
+#user_name:hover .user_name_list {
+    display: initial;
+}
+
+#user_name > .user_name_list > li > a:hover {
+    background-color: #ccc;
+}
