@@ -1,0 +1,26 @@
+#b_bottom > div:first-child{
+	color: #fff;
+	position: absolute;
+	padding: 2px 5px;
+	background-color: rgba(0,0,0,0.5);
+	width: 26px;
+	margin: 76px 0 0 889px;
+}
+/*底部*/
+#bottom > span{
+	color: #999;
+}
+#bottom > div{
+ 	display: inline-block;
+ 	margin-left: 15px;
+ 	color: #999;
+ }
+#bottom > a{
+	display: block;
+}
+#bottom a{
+	color: #999;
+}
+#bottom a:hover{
+	color: #555;
+}
