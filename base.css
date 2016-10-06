@@ -13,6 +13,9 @@
 }
 
 
+/*mainbody25;logo50;player75;sign100;background-100;*/
+
+
 /*整体布局*/
 
 body {
@@ -21,13 +24,11 @@ body {
 
 #f_fixed {
     width: 100%;
-    position: fixed;
 }
 
 #fixed {
     width: 900px;
     margin: 0 auto;
-    position: relative;
 }
 
 
@@ -96,8 +97,9 @@ body {
 
 #main_body {
     display: inline-block;
-    float: left;
     margin-top: 170px;
+    position: absolute;
+    z-index: 25;
 }
 
 
@@ -106,8 +108,8 @@ body {
 #b_bottom {
     width: 900px;
     float: left;
-    position: relative;
-    margin-top: 130px;
+    position: absolute;
+    margin-top: 1030px;
 }
 
 #ad_last {
@@ -128,14 +130,16 @@ body {
 
 #select_body {
     width: 675px;
-    height: 100%;
-    left: -650px;
     position: fixed;
+    left: -650px;
     background-color: #fff;
-    box-shadow: 0 0 30px #777;
     z-index: 500;
+    box-shadow: 0 0 30px #777;
 }
 
-#select_body:hover {
-    transform: translateX(650px);
+
+/**/
+
+strong {
+    font-weight: bold;
 }

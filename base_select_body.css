@@ -1,0 +1,166 @@
+/*切换按钮*/
+
+#select_body_btn {
+    position: fixed;
+    margin-left: 659px;
+    padding-top: 268px;
+    padding-bottom: 268px;
+    z-index: 700;
+}
+
+
+/*顶部*/
+
+#select_body_search {
+    height: 95px;
+    background-color: #fff;
+    margin-left: 50px;
+    margin-top: 75px;
+}
+
+#select_body_search > h2 {
+    font-size: 32px;
+    display: inline-block;
+    float: left;
+}
+
+#select_body_search > div {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 150px;
+    height: 15px;
+    background-color: #fff;
+    display: inline-block;
+    float: right;
+    margin-top: 3px;
+    margin-right: 35px;
+}
+
+#select_body_search > div >input {
+    width: 135px;
+    display: inline-block;
+    float: left;
+}
+
+#select_body_search > div >button {
+    background-image: url('img/search_btn1.png');
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    float: right;
+    background-color: #fff;
+}
+
+
+/*媒体播放器*/
+
+#select_body_player {
+    width: 100%;
+    height: 275px;
+    background-color: #eff5f2;
+}
+
+
+/*分类导航*/
+
+#select_body_nav {
+    margin: 40px 100px 40px 50px;
+}
+
+#select_body_nav > a {
+    padding: 0 5px;
+    display: inline-block;
+    margin: 5px 0;
+    border-right: 1px solid #ccc;
+}
+
+#select_body_nav > a:hover {
+    color: #9dd6c5;
+}
+
+
+/*列表*/
+
+.select_body_list {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 600px;
+    display: block;
+}
+
+.select_body_list > span {
+    color: #000;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sel_body_lists {
+    display: inline-block;
+    width: 250px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.sel_body_lists >div:first-child {
+    width: 45px;
+    height: 45px;
+    border-radius: 22px;
+    display: inline-block;
+    float: left;
+}
+
+.sel_body_lists >div:first-child > img {
+    display: none;
+}
+
+.sel_body_lists >div:last-child {
+    float: left;
+    display: inline-block;
+    width: 195px;
+    height: 45px;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+.sel_body_lists >div:last-child > a:first-child {
+    display: block;
+    line-height: 23px;
+}
+
+.sel_body_lists >div:last-child > span {
+    line-height: 22px;
+    display: inline-block;
+}
+
+.sel_body_lists >div:last-child > a:last-child {
+    display: inline-block;
+    line-height: 22px;
+}
+
+.select_body_list_jianjie {
+    display: none;
+    position: absolute;
+    width: 260px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.select_body_list_jianjie > span {
+    display: block;
+    border-bottom: 1px dashed #ccc;
+    padding: 15px 0;
+    margin: 0 15px;
+    font-size: 12px;
+}
+
+.select_body_list_jianjie > span:last-child {
+    border: 0;
+}
+
+.select_body_list_jianjie > span > strong {
+    font-size: 12px;
+}
+
+.sel_body_lists > div:last-child > a:hover {
+    color: #9dd6c5;
+}
