@@ -4,7 +4,7 @@
     position: relative;
 }
 
-#user_name > div:first-child {
+#sign_div .sel_div {
     display: inline-block;
     height: 2px;
     border-color: #666 transparent transparent;
@@ -31,6 +31,7 @@
 #user_name > .user_name_list > li > a {
     padding: 5px 15px;
     display: block;
+    color: #000;
 }
 
 #user_name:hover .user_name_list {

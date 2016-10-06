@@ -1,0 +1,93 @@
+/*主列表*/
+
+#main_body > ul {
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+#main_body > ul > h6 {
+    padding: 10px 0;
+    display: inline-block;
+}
+
+#main_body > ul > li {
+    margin: 15px 0;
+    background-color: rgba(198, 211, 205, 0.5);
+}
+
+#main_body > ul > li > a {
+    display: block;
+    padding: 12px 25px;
+    color: #000;
+}
+
+#main_body > ul > hr {
+    display: inline-block;
+    border-top: 1px solid #bbb;
+    width: 160px;
+    padding-top: 5px;
+}
+
+
+/*日期*/
+
+#main_body .list_date {
+    display: inline-block;
+    float: right;
+    height: 39px;
+    width: 60px;
+    background-color: #fff;
+    margin: -12px -25px 0 0;
+}
+
+#main_body .list_date > div {
+    float: right;
+    width: 20px;
+    height: 39px;
+    background-color: #6BBD7A;
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+
+/*下拉列表*/
+
+#main_body .sel_div {
+    position: absolute;
+    display: none;
+    margin-top: -27px;
+    margin-left: 180px;
+}
+
+#main_body > ul > li:hover .sel_div {
+    display: inline-block;
+}
+
+#main_body > ul > li:hover {
+    background-color: rgba(198, 211, 205, 1);
+}
+
+.sel_div_list {
+    position: absolute;
+    width: 80px;
+    border: 1px solid #eee;
+    margin-left: 0px;
+    display: none;
+}
+
+.sel_div_list >li > a {
+    padding: 8px;
+    display: block;
+    background-color: #fff;
+}
+
+.sel_div:hover .sel_div_list {
+    display: block;
+}
+
+.sel_div_list >li > a:hover {
+    background-color: #ddd;
+}

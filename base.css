@@ -5,7 +5,7 @@
     padding: 0;
     border: 0;
     text-decoration: none;
-    color: #000;
+    color: #999;
     font-size: 13px;
     font-weight: initial;
     list-style: none;
@@ -41,10 +41,10 @@ body {
 
 #logo {
     display: inline-block;
-    margin-top: 55px;
-    margin-left: 45px;
+    padding: 55px 200px 20px 45px;
     position: fixed;
     z-index: 75;
+    background-color: #fff;
 }
 
 #sign_div {
@@ -80,9 +80,9 @@ body {
 #bk_bkground {
     position: fixed;
     width: 100%;
-    height: 250px;
-    background-color: #963;
-    top: 190px;
+    height: 275px;
+    background-color: #E1E8E5;
+    top: 170px;
     z-index: -100;
 }
 
@@ -107,6 +107,7 @@ body {
     width: 900px;
     float: left;
     position: relative;
+    margin-top: 130px;
 }
 
 #ad_last {
@@ -118,7 +119,7 @@ body {
 }
 
 #bottom {
-    margin-top: 200px;
+    margin: 200px 0 100px;
     text-align: center;
 }
 
