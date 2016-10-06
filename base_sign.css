@@ -41,3 +41,7 @@
 #user_name > .user_name_list > li > a:hover {
     background-color: #ccc;
 }
+
+#user_name + div > a:hover {
+    color: #222;
+}

@@ -1,0 +1,97 @@
+/*btn1*/
+
+#share > button:first-child {
+    width: 115px;
+    background-color: transparent;
+    float: left;
+}
+
+#share > button:first-child > span {
+    line-height: 20px;
+    display: inline-block;
+    float: right;
+}
+
+#share > button:first-child > img {
+    display: inline-block;
+    float: left;
+}
+
+
+/*btn2*/
+
+#share > button:first-child + button {
+    border: 1px solid #58c198;
+    background-color: transparent;
+    width: 105px;
+    padding: 2px 5px;
+    float: right;
+}
+
+#share > button:first-child + button >img {
+    float: left;
+}
+
+#share > button:first-child + button > span {
+    float: right;
+    display: inline-block;
+    line-height: 22px;
+    color: #58c198;
+}
+
+
+/*div*/
+
+#share > div {
+    position: absolute;
+    display: block;
+    margin-top: 45px;
+    right: 0;
+}
+
+#share > div > a {
+    display: inline-block;
+}
+
+#share > div > a span {
+    display: inline-block;
+    line-height: 22px;
+    float: left;
+    margin-left: 5px;
+}
+
+#share > div > a > span:first-child:hover {
+    color: #000;
+}
+
+#share > div > a div {
+    display: none;
+    margin-left: 10px;
+    float: left;
+}
+
+
+/*btn3*/
+
+#share > button:last-child {
+    position: absolute;
+    margin-top: 110px;
+    right: 0;
+    background-color: #00c35a;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+#share > button:last-child > img {
+    display: inline-block;
+    float: left;
+}
+
+#share > button:last-child >span {
+    display: inline-block;
+    float: left;
+    line-height: 22px;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 5px;
+}

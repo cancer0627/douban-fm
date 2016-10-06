@@ -8,6 +8,8 @@
     var s_body_lists = document.getElementsByClassName('sel_body_lists');
     var s_body_list_jianjie = document.getElementsByClassName('select_body_list_jianjie');
     var s_body_list_pic = document.getElementsByClassName('select_body_list_pic');
+    var share_div = document.getElementsByClassName('share_div')[0];
+    var share_btn = document.getElementsByClassName('share_btn')[0];
 
     var date = new Date();
     var day = date.getDate();
@@ -21,7 +23,7 @@
     }
     list_date.childNodes[1].innerHTML = match_date(day);
     list_date.childNodes[3].innerHTML = match_date(mon) + "月";
-    /**/
+    /*右侧菜单切换*/
     select_body_btn.onclick = function() {
         if (select_body_btn.src.match("sidebar_icon22.png")) {
             select_body.style.left = "0px";
@@ -55,7 +57,7 @@
         }
     }
 
-    /**/
+    /*右侧菜单中的样式*/
     var i;
     for (i = 0; i < s_body_lists.length; i++) {
         s_body_lists[i].onmouseover = function() {
@@ -66,5 +68,13 @@
             this.childNodes[1].childNodes[1].style.display = 'none';
             this.childNodes[3].childNodes[7].style.display = 'none';
         }
+    }
+
+    /*分享模块样式*/
+    share_div.onmouseover = function() {
+        share_btn.style.display = 'inline-block';
+    }
+    share_div.onmouseout = function() {
+        share_btn.style.display = 'none';
     }
 }(window))
