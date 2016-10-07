@@ -1,0 +1,180 @@
+#song_div > a {
+    width: 245px;
+    height: 245px;
+    display: inline-block;
+    float: left;
+}
+
+#song_div > a >img {
+    display: inline-block;
+    float: left;
+}
+
+#song_div > a > div {
+    display: none;
+    position: absolute;
+    width: 245px;
+    height: 245px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#song_div > a > div > div {
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 115px 83px;
+}
+
+#song_div > div {
+    padding-top: 35px;
+    padding-left: 25px;
+    width: 240px;
+    height: 210px;
+    display: inline-block;
+    float: left;
+}
+
+#song_div > div > span {
+    display: block;
+}
+
+#song_div > div > span:first-child {
+    font-size: 30px;
+}
+
+#song_div > div > a {
+    display: block;
+    margin-top: 15px;
+    color: green;
+}
+
+
+/**/
+
+#song_control {
+    display: inline-block;
+    width: 265px;
+    height: 125px;
+    margin-left: 245px;
+    margin-top: 120px;
+    position: absolute;
+}
+
+
+/*进度*/
+
+#song_control #jindu {
+    margin: 0 25px;
+    width: 215px;
+    height: 3px;
+    position: relative;
+}
+
+#song_control #dur_jindu {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+}
+
+#song_control #cur_jindu {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    /*width: 100%;*/
+    height: 3px;
+    background-color: green;
+}
+#btn_jindu{
+	position: absolute;
+	top: 0;
+	height: 3px;
+	right: -3px;
+	width: 6px;
+	/*background-color: #fff;*/
+}
+
+/*时间*/
+
+#song_time {
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+
+/*音量*/
+
+#song_volume {
+    right: 0px;
+    position: absolute;
+    top: 7px;
+}
+
+#song_volume >img {
+    display: inline-block;
+    float: left;
+}
+
+#vol {
+    margin-top: 5px;
+    margin-left: -5px;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    display: none;
+}
+
+#song_volume:hover {
+    right: 30px;
+}
+
+#song_volume:hover #vol {
+    display: inline-block;
+}
+
+#dur_volume {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+}
+
+#cur_volume {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    /*width: 100%;*/
+    height: 3px;
+    background-color: green;
+}
+#btn_volume{
+	position: absolute;
+	top: 0;
+	width: 6px;
+	height: 3px;
+	/*background-color: #fff;*/
+	right: -3px;
+}
+
+/**/
+
+#song_stop {
+    position: absolute;
+    top: -120px;
+    left: 215px;
+}
+
+#song_start {
+    position: absolute;
+    /*display: none;*/
+    width: 265px;
+    height: 245px;
+    top: -120px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+#song_start >a {
+    display: inline-block;
+    padding: 115px 100px;
+    color: #000;
+}
