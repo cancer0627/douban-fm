@@ -49,7 +49,7 @@
 }
 
 
-/**/
+/*控制*/
 
 #song_control {
     display: inline-block;
@@ -84,14 +84,16 @@
     height: 3px;
     background-color: green;
 }
-#btn_jindu{
-	position: absolute;
-	top: 0;
-	height: 3px;
-	right: -3px;
-	width: 6px;
-	/*background-color: #fff;*/
+
+#btn_jindu {
+    position: absolute;
+    top: 0;
+    height: 3px;
+    right: -3px;
+    width: 6px;
+    /*background-color: #fff;*/
 }
+
 
 /*时间*/
 
@@ -109,6 +111,8 @@
     right: 0px;
     position: absolute;
     top: 7px;
+    background-color: #fff;
+    display: inline-block;
 }
 
 #song_volume >img {
@@ -119,14 +123,11 @@
 #vol {
     margin-top: 5px;
     margin-left: -5px;
-    width: 30px;
+    width: 60px;
     height: 3px;
-    position: absolute;
+    position: relative;
+    float: right;
     display: none;
-}
-
-#song_volume:hover {
-    right: 30px;
 }
 
 #song_volume:hover #vol {
@@ -147,14 +148,16 @@
     height: 3px;
     background-color: green;
 }
-#btn_volume{
-	position: absolute;
-	top: 0;
-	width: 6px;
-	height: 3px;
-	/*background-color: #fff;*/
-	right: -3px;
+
+#btn_volume {
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 3px;
+    /*background-color: #fff;*/
+    right: -3px;
 }
+
 
 /**/
 
@@ -177,4 +180,13 @@
     display: inline-block;
     padding: 115px 100px;
     color: #000;
+}
+
+
+/**/
+
+#song_volume + div {
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 50px;
 }

@@ -31,21 +31,46 @@
 
     /*播放时*/
     music1.ontimeupdate = function() {
-    	show_jindu();
-    	jindu_cur();
-    	music_cur();
+        show_jindu();
+        jindu_cur();
+        music_cur();
+        //console.log(document.body.scrollTop);
+        //console.log(document.body.scrollHeight);
     }
 
-    function show_jindu(){
-    	var tim1 = parseInt(music1.currentTime);
-    	var tim2 = parseInt(music1.duration);
-    	var s_time=tim2-tim1;
-    	if (s_time % 60 < 10) {
+    /*主页面定位样式切换*/
+    setInterval(scre, 10);
+
+    function scre() {
+        if (main_body.style.position != "fixed") {
+            if (document.body.scrollTop >= 500) {
+                document.getElementById('bk_bkground').style.position = 'absolute';
+                document.getElementById('bk_bkground').style.top = "670px";
+                document.getElementById('p_player').style.position = 'absolute';
+                document.getElementById('p_player').style.top = "595px";
+                document.getElementById('sign').style.position = 'absolute';
+                document.getElementById('sign').style.top = "500px";
+            } else {
+                document.getElementById('bk_bkground').style.position = 'fixed';
+                document.getElementById('bk_bkground').style.top = "170px";
+                document.getElementById('p_player').style.position = 'fixed';
+                document.getElementById('p_player').style.top = "95px";
+                document.getElementById('sign').style.position = 'fixed';
+                document.getElementById('sign').style.top = "0px";
+            }
+        }
+    }
+
+    function show_jindu() {
+        var tim1 = parseInt(music1.currentTime);
+        var tim2 = parseInt(music1.duration);
+        var s_time = tim2 - tim1;
+        if (s_time % 60 < 10) {
             s_time = parseInt(s_time / 60) + ":0" + s_time % 60;
         } else {
             s_time = parseInt(s_time / 60) + ":" + s_time % 60;
         }
-        song_time.innerHTML='-'+s_time;
+        song_time.innerHTML = '-' + s_time;
     }
 
     function jindu_cur() {
@@ -153,7 +178,7 @@
         cur_volume.style.width = music1.volume * 100 + "%";
     }
 
-    /**/
+    /*进度条拖动*/
     btn_jindu.ondragstart = function(event) {
         x_sta = event.clientX;
         x_cur = cur_jindu.clientWidth;
