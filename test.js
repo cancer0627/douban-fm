@@ -10,6 +10,8 @@
     var s_body_list_pic = document.getElementsByClassName('select_body_list_pic');
     var share_div = document.getElementsByClassName('share_div')[0];
     var share_btn = document.getElementsByClassName('share_btn')[0];
+    var s_pyr_btn = document.getElementsByClassName('s_pyr_btn');
+    var s_player = document.getElementsByClassName('s_player');
 
     var date = new Date();
     var day = date.getDate();
@@ -76,5 +78,76 @@
     }
     share_div.onmouseout = function() {
         share_btn.style.display = 'none';
+    }
+
+    /*专辑切换*/
+    for (j = 0; j < s_player.length; j++) {
+        s_player[j].style.display = "none";
+    }
+    s_player[0].style.display = "initial";
+    s_pyr_btn[0].style.backgroundColor = "#9dd6c5";
+    var tim = setInterval(qiehuan, 3000);
+    console.log(s_pyr_btn[0].style.backgroundColor.indexOf("9"));
+
+    function qiehuan() {
+        if (s_pyr_btn[0].style.backgroundColor.indexOf("9") == 15) {
+            s_pyr_btn[1].style.backgroundColor = "#9dd6c5";
+            s_pyr_btn[0].style.backgroundColor = "#ddd";
+            pipei();
+        } else if (s_pyr_btn[1].style.backgroundColor.indexOf("9") == 15) {
+            s_pyr_btn[2].style.backgroundColor = "#9dd6c5";
+            s_pyr_btn[1].style.backgroundColor = "#ddd";
+            pipei();
+        } else if (s_pyr_btn[2].style.backgroundColor.indexOf("9") == 15) {
+            s_pyr_btn[3].style.backgroundColor = "#9dd6c5";
+            s_pyr_btn[2].style.backgroundColor = "#ddd";
+            pipei();
+        } else if (s_pyr_btn[3].style.backgroundColor.indexOf("9") == 15) {
+            s_pyr_btn[4].style.backgroundColor = "#9dd6c5";
+            s_pyr_btn[3].style.backgroundColor = "#ddd";
+            pipei();
+        } else if (s_pyr_btn[4].style.backgroundColor.indexOf("9") == 15) {
+            s_pyr_btn[5].style.backgroundColor = "#9dd6c5";
+            s_pyr_btn[4].style.backgroundColor = "#ddd";
+            pipei();
+        } else {
+            s_pyr_btn[0].style.backgroundColor = "#9dd6c5";
+            s_pyr_btn[5].style.backgroundColor = "#ddd";
+            pipei();
+        }
+    }
+
+    function pipei() {
+        for (i = 0; i < s_pyr_btn.length; i++) {
+            if (s_pyr_btn[i].style.backgroundColor.indexOf("9") == 15) {
+                for (j = 0; j < s_player.length; j++) {
+                    s_player[j].style.display = "none";
+                }
+                s_player[i].style.display = "initial";
+            }
+        }
+    }
+
+    for (i = 0; i < s_pyr_btn.length; i++) {
+        s_pyr_btn[i].onmouseover = function() {
+            clearInterval(tim);
+            for (i = 0; i < s_pyr_btn.length; i++) {
+                s_pyr_btn[i].style.backgroundColor = "#ddd";
+            }
+            this.style.backgroundColor = "#9dd6c5";
+            pipei();
+        }
+        s_pyr_btn[i].onmouseout = function() {
+            tim = setInterval(qiehuan, 3000);
+        }
+    }
+    /**/
+    for (i = 0; i < s_player.length; i++) {
+        s_player[i].onmouseover = function() {
+            this.childNodes[3].childNodes[1].style.color = "#9dd6c5";
+        }
+        s_player[i].onmouseout = function() {
+            this.childNodes[3].childNodes[1].style.color = "#999";
+        }
     }
 }(window))
