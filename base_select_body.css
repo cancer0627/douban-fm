@@ -85,7 +85,7 @@
 }
 
 .s_player > img {
-    display: inline-block;
+    display: block !important;
     float: left;
 }
 

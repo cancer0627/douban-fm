@@ -144,6 +144,7 @@
     /**/
     for (i = 0; i < s_player.length; i++) {
         s_player[i].onmouseover = function() {
+            //console.log(s_player[i].childNodes[1].style);
             this.childNodes[3].childNodes[1].style.color = "#9dd6c5";
         }
         s_player[i].onmouseout = function() {
