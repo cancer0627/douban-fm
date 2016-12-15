@@ -1,4 +1,4 @@
-(function() {
+(function () {
     var music1 = document.getElementById('music1');
     var dur_jindu = document.getElementById('dur_jindu');
     var cur_jindu = document.getElementById('cur_jindu');
@@ -11,12 +11,12 @@
     var song_start = document.getElementById('song_start');
 
     /*开始停止*/
-    song_stop.onclick = function() {
+    song_stop.onclick = function () {
         song_start.style.display = "block";
         music1.pause();
     }
 
-    song_start.onclick = function() {
+    song_start.onclick = function () {
         song_start.style.display = "none";
         music1.play();
     }
@@ -30,7 +30,7 @@
     })
 
     /*播放时*/
-    music1.ontimeupdate = function() {
+    music1.ontimeupdate = function () {
         show_jindu();
         jindu_cur();
         music_cur();
@@ -86,7 +86,7 @@
     var x_sta, x_end, x_cur, x_dur, x_len;
 
     /*音量条点击*/
-    dur_volume.onclick = function(event) {
+    dur_volume.onclick = function (event) {
         x_end = event.layerX;
         x_dur = dur_volume.clientWidth;
         x_len = x_end / x_dur;
@@ -100,7 +100,7 @@
         cur_volume.style.width = music1.volume * 100 + "%";
     }
 
-    cur_volume.onclick = function(event) {
+    cur_volume.onclick = function (event) {
         x_end = event.layerX;
         x_dur = dur_volume.clientWidth;
         x_len = x_end / x_dur;
@@ -115,7 +115,7 @@
     }
 
     /*进度条点击*/
-    dur_jindu.onclick = function(event) {
+    dur_jindu.onclick = function (event) {
         x_end = event.layerX;
         x_dur = dur_jindu.clientWidth;
         x_len = x_end / x_dur;
@@ -130,7 +130,7 @@
         jindu_cur();
     }
 
-    cur_jindu.onclick = function(event) {
+    cur_jindu.onclick = function (event) {
         x_end = event.layerX;
         x_dur = dur_jindu.clientWidth;
         x_len = x_end / x_dur;
@@ -146,13 +146,13 @@
     }
 
     /*音量条拖动*/
-    btn_volume.ondragstart = function() {
+    btn_volume.ondragstart = function () {
         x_sta = event.clientX;
         x_cur = cur_volume.clientWidth;
         x_dur = dur_volume.clientWidth;
     }
 
-    btn_volume.ondrag = function(event) {
+    btn_volume.ondrag = function (event) {
         x_end = event.clientX;
         x_len = (x_cur - x_sta + x_end) / x_dur;
         if (x_len <= 0) {
@@ -165,7 +165,7 @@
         cur_volume.style.width = music1.volume * 100 + "%";
     }
 
-    btn_volume.ondragend = function(event) {
+    btn_volume.ondragend = function (event) {
         x_end = event.clientX;
         x_len = (x_cur - x_sta + x_end) / x_dur;
         if (x_len <= 0) {
@@ -179,13 +179,13 @@
     }
 
     /*进度条拖动*/
-    btn_jindu.ondragstart = function(event) {
+    btn_jindu.ondragstart = function (event) {
         x_sta = event.clientX;
         x_cur = cur_jindu.clientWidth;
         x_dur = dur_jindu.clientWidth;
     }
 
-    btn_jindu.ondrag = function(event) {
+    btn_jindu.ondrag = function (event) {
         x_end = event.clientX;
         x_len = (x_cur - x_sta + x_end) / x_dur;
         if (x_len <= 0) {
@@ -199,7 +199,7 @@
         jindu_cur();
     }
 
-    btn_jindu.ondragend = function(event) {
+    btn_jindu.ondragend = function (event) {
         x_end = event.clientX;
         x_len = (x_cur - x_sta + x_end) / x_dur;
         if (x_len <= 0) {
